@@ -4,9 +4,9 @@ import {useStateValue} from '../../StateProvider'
 
 function Product({id, title, image, price}) {
     const [{basket}, dispatch] = useStateValue();
-    console.log(basket);
+    // console.log(basket);
     const addToBasket = () => {
-        //kirim item ke data layer
+        //kirim item ke data layer / reducer
         dispatch({
             type: "ADD_TO_BASKET",
             item: {
